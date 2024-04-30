@@ -97,33 +97,33 @@ public class TestingVariables {
 
     }
 
-}
 
-public void doesThisCompile(boolean check) {
-    // var question; // var variables need to be initialised on the same line
-    var question = 1;
-    // question = 1;
-    // var answer;
-    var answer = 0; // var variables need to be initialised on the same line
-    if (check) {
-        answer = 2;
-    } else {
-        answer = 3;
+    public void doesThisCompile(boolean check) {
+        // var question; // var variables need to be initialised on the same line
+        var question = 1;
+        // question = 1;
+        // var answer;
+        var answer = 0; // var variables need to be initialised on the same line
+        if (check) {
+            answer = 2;
+        } else {
+            answer = 3;
+        }
+        System.out.println(answer);
     }
-    System.out.println(answer);
-}
 
-public void twoTypes() {
-    // int a, var b = 3; // DOES NOT COMPILE . Must be the same type for multiple
-    // declaration
-    // var n = null; // DOES NOT COMPILE - null does not tell you what type of
-    var n = (String) null; // We can cast null to a String which is an Object, then assign it to a var
-    var n2 = "myData"; // String is an Object
-    n = null; // so we can assign null to an Object type
-    var m = 4; // 4 is not an object, it i a primitive type
-    // m = null; // so DOES NOT COMPILE because we can only assign null to an Object
-    // type
-   
+    public void twoTypes() {
+        // int a, var b = 3; // DOES NOT COMPILE . Must be the same type for multiple
+        // declaration
+        // var n = null; // DOES NOT COMPILE - null does not tell you what type of
+        var n = (String) null; // We can cast null to a String which is an Object, then assign it to a var
+        var n2 = "myData"; // String is an Object
+        n = null; // so we can assign null to an Object type
+        var m = 4; // 4 is not an object, it i a primitive type
+        // m = null; // so DOES NOT COMPILE because we can only assign null to an Object
+        // type
+
+    }
 }
 
 // var is not used for constructor and method params , only local params
