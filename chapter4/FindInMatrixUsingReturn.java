@@ -43,7 +43,7 @@ public class FindInMatrixUsingReturn {
 //            }
             int hour = 2;
             switch(hour) {
-                case 1: return; hour++; // DOES NOT COMPILE, not reachable 
+          //      case 1: return; hour++; // DOES NOT COMPILE, not reachable
                 case 2:
             }
         }
