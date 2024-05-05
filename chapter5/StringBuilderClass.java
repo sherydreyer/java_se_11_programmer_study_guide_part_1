@@ -1,6 +1,6 @@
-package chapter4;
+package chapter5;
 
-public class StringBuilerClass {
+public class StringBuilderClass {
     public static void main(String[] args) {
         String alpha = "";
         for (char current = 'a'; current <= 'z'; current++)
@@ -72,6 +72,69 @@ public class StringBuilerClass {
 
 
 //        delete() and deleteCharAt()
+//        The method signatures
+//        are as follows:
+//        StringBuilder delete(int startIndex, int endIndex)
+//        StringBuilder deleteCharAt(int index)
+        StringBuilder sb8 = new StringBuilder("abcdef");
+        sb8.delete(1, 3); // sb = adef
+      //  sb8.deleteCharAt(5); // throws an exception
+
+//        replace()
+//        The method signature is as follows:
+//        StringBuilder replace(int startIndex, int endIndex, String
+//        newString)
+//        StringBuilder builder = new StringBuilder("pigeon dirty");
+//        builder.replace(3, 6, "sty");
+//        System.out.println(builder); // pigsty dirty
+        StringBuilder builder = new StringBuilder("pigeon dirty");
+        builder.replace(3, 100, "");
+        System.out.println(builder);
+
+//        reverse()
+//        The
+//        method signature is as follows:
+//        StringBuilder reverse()
+//        The following code shows how to use this method:
+        StringBuilder sb9 = new StringBuilder("ABC");
+        sb9.reverse();
+        System.out.println(sb9);
+
+//        toString()
+//        The method
+//        signature is as follows:
+//        String toString()
+        StringBuilder sb10 = new StringBuilder("ABC");
+        String s = sb10.toString();
+        System.out.println(s);
+
+//        Understanding Equality
+
+        StringBuilder one = new StringBuilder();
+        StringBuilder two = new StringBuilder();
+        StringBuilder three = one.append("a");
+        System.out.println(one == two); // false
+        System.out.println(one == three); // true
+
+//        to check the values inside the String
+//        rather than the string reference itself
+        String x = "Hello World";
+        String z = " Hello World".trim();
+        System.out.println(x.equals(z)); // true
+
+        String string = "a";
+        StringBuilder builder2 = new StringBuilder("a");
+     //   System.out.println(string == builder); //DOES NOT COMPILE cannot compare two different types
+
+
+
+
+
+
+
+
+
+
 
 
     }
