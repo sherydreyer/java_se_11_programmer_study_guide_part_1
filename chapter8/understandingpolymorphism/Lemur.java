@@ -30,6 +30,13 @@ public class Lemur extends Primate implements HasTail {
         Primate primate2 = lemur;
        // System.out.println(primate.isTailStriped()); // DOES NOTCOMPILE can only access members of Primate
 
+        //CASTING
+        Primate primate3 = new Lemur(); // Implicit Cast
+//        Lemur lemur3 = primate3; // DOES NOT COMPILE
+//        System.out.println(lemur3.age);
+        Lemur lemur3 = (Lemur)primate3; // Explicit Cast
+        System.out.println(lemur3.age);
+
     }
 }
 
