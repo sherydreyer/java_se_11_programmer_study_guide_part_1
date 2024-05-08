@@ -5,7 +5,7 @@ class Camel {
         return 1;
     }
 }
-class BactrianCamel extends Camel {
+class BactrianCamel extends Camel{
 //    private int getNumberOfHumps() { // DOES NOT COMPILE access modifier must not be more restrictive
 //                                     //for overriding
 //        return 2;
