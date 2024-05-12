@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/care/care.iml" filepath="$PROJECT_DIR$/care/care.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/chapter11.iml" filepath="$PROJECT_DIR$/.idea/chapter11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feeding/feeding.iml" filepath="$PROJECT_DIR$/feeding/feeding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module-info/module-info.iml" filepath="$PROJECT_DIR$/module-info/module-info.iml" />
+      <module fileurl="file://$PROJECT_DIR$/staff/staff.iml" filepath="$PROJECT_DIR$/staff/staff.iml" />
+      <module fileurl="file://$PROJECT_DIR$/talks/talks.iml" filepath="$PROJECT_DIR$/talks/talks.iml" />
+    </modules>
+  </component>
+</project>
