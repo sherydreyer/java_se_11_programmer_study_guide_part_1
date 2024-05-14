@@ -10,3 +10,26 @@ jar -cvf mods/zoo.animal.care.jar -C care/ .
 
 javac -p mods -d staff staff/zoo/staff/*.java staff/module-info.java
  jar -cvf mods/zoo.staff.jar -C staff/ .
+
+//prints information about the module
+java -p mods -d zoo.animal.feeding
+
+//The command to describe the module and the output.
+ java -p mods -d zoo.animal.care
+
+//List available modules
+java --list-modules
+
+//use it with custom code
+java -p mods --list-modules
+
+//A way of debugging modules. It spits out a lot of output when the program starts up. Then it runs the program.
+java --show-module-resolution -p feeding -m zoo.animal.feeding/zoo.animal.feeding.Task
+
+// The jar command can describe a module. Both of these commands are equivalent:
+ jar -f mods/zoo.animal.feeding.jar -d
+ jar --file mods/zoo.animal.feeding.jar --describe-module
+
+//The jdeps command gives you information about dependencies within a module.
+jdeps -s mods/zoo.animal.feeding.jar
+ jdeps -summary mods/zoo.animal.feeding.jar
